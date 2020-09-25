@@ -4,13 +4,13 @@ DROP TABLE IF EXISTS posts; -- DROP TABLE allows you to delete a table from the 
 DROP TABLE IF EXISTS users;
 -- the order of the above code does matter! Because the posts table references the users table, it would give an error if it was in any other order
 
-create table users ( 
+create table users ( --creates a new table in database
     users_id serial primary key, 
     username varchar(20),
     password varchar(20)  
 );
 
-create table if not exists posts ( 
+create table if not exists posts( 
     post_id serial primary key, 
     users_id int references users(users_id),
     content varchar(200),

@@ -1,0 +1,2 @@
+SELECT * FROM users WHERE username ilike $1; /* ilike is checking for case sense so multiple users cant create new login with similar email variances (eg me@gmail vs Me@gmail vs mE@gmail) */
+                                             /* $1 is a placeholder for the first placeholder of whatever the first argument that we pass in  */

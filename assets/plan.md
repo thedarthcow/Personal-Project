@@ -56,3 +56,17 @@ ENDPOINTS:
 - app.put('/api/posts/:post_id', postCtrl.editPost) - receives post_id on req.params, content on req.body and passes them to db.edit_post. Then runs db.get_posts and returns result.
 
 - app.delete('/api/posts/:post_id', postCtrl.deletePost) - receives post_id on req.params and passes it to db.delete_post. Then runs db.get_posts and returns result. -->
+
+
+PACKAGES TO INSTALL:
+-massive 
+-express 
+-dotenv 
+-express-session 
+-axios 
+-bcrypt.js 
+-react-router-dom 
+-react-redux 
+-redux-devtools-extension
+
+npm i massive express dotenv express-session axios bcrypt.js react-router-dom react-redux redux-devtools-extension
