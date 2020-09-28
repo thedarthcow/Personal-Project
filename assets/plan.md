@@ -64,9 +64,8 @@ PACKAGES TO INSTALL:
 -dotenv 
 -express-session 
 -axios 
--bcrypt.js 
+-bcryptjs
 -react-router-dom 
 -react-redux 
 -redux-devtools-extension
-
-npm i massive express dotenv express-session axios bcrypt.js react-router-dom react-redux redux-devtools-extension
+-redux

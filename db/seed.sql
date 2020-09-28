@@ -5,14 +5,14 @@ DROP TABLE IF EXISTS users;
 -- the order of the above code does matter! Because the posts table references the users table, it would give an error if it was in any other order
 
 create table users ( --creates a new table in database
-    users_id serial primary key, 
-    username varchar(20),
-    password varchar(20)  
+    id serial primary key,
+    email varchar(100),
+    hash varchar(250) 
 );
 
 create table if not exists posts( 
-    post_id serial primary key, 
-    users_id int references users(users_id),
-    content varchar(200),
+    id serial primary key,
+    users_id int references users(id),
+    content varchar(250),
     created_at date
 );
