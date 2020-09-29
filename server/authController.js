@@ -15,7 +15,7 @@ module.exports = {
     const { email, password } = req.body
 
     //See if user exists in db
-    const [user] = await db.check_user([email])
+    const [user] = await db.check_users([email])
 
     //If they exist, reject the request
     if (user) {
@@ -50,7 +50,7 @@ module.exports = {
     const { email, password } = req.body
 
     //Check if user exists
-    const [existingUser] = await db.check_user([email])
+    const [existingUser] = await db.check_users([email])
 
     //If they don't reject the request
     if (!existingUser) {
@@ -62,7 +62,7 @@ module.exports = {
 
     //If there is a mismatch, reject the request
     if (!isAuthenticated) {
-      return res.status(403).send('Incorrect email or password')
+      return res.status(403).send('Invalid email or password')
     }
 
     delete existingUser.hash

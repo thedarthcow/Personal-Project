@@ -23,7 +23,7 @@ app.use(
 
 //auth endpoints
 //login, register, logout, getUser
-app.post('/auth/register', authCtrl.register)
+app.post('/auth/register', authCtrl.register) //endpoint for a new user to register an account 
 app.post('/auth/login' , authCtrl.login)
 app.delete('/auth/logout' , authCtrl.logout)
 app.get('/auth/user' , authCtrl.getUser) 
@@ -41,8 +41,8 @@ massive({
     ssl: { rejectUnauthorized: false },
   }).then((dbInstance) => {
     app.set('db', dbInstance)
-    console.log("DB is connected cap'n")
+    console.log("Database is connected")
     app.listen(SERVER_PORT, () =>
-      console.log(`Crunchatize me on port ${SERVER_PORT}`)
+      console.log(`Listening on port ${SERVER_PORT}`)
     )
   })

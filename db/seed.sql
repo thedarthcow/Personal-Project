@@ -16,3 +16,5 @@ create table if not exists posts(
     content varchar(250),
     created_at date
 );
+
+-- get * users from database

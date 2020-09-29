@@ -69,3 +69,4 @@ PACKAGES TO INSTALL:
 -react-redux 
 -redux-devtools-extension
 -redux
+-redux-promise-middleware
