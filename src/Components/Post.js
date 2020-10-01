@@ -30,6 +30,16 @@ const Post = (props) => {
             Delete
           </button>
         )}
+      {props.user.id === props.post.author_id && (
+          <button
+            className="like-button"
+            onClick={() => {
+              props.handleLike(props.post.id)
+            }}
+          >
+            Like {props.likeCount}
+          </button>
+        )}
       </div>
     </li>
   )

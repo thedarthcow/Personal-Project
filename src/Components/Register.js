@@ -40,7 +40,7 @@ class Register extends Component {
             <div className="flex-vertical">
               <input
                 maxLength="100"
-                placeholder="Enter Email"
+                placeholder="Enter Username"
                 name="email"
                 onChange={(e) => {
                   this.handleInput(e)
@@ -66,7 +66,7 @@ class Register extends Component {
             </button>
           </div>
           <div className="flex-horizontal link">
-            <span>Already have an account? login here: </span>
+            <span>Login here: </span>
             <Link className="input-container-button" to="/">
               Login
             </Link>

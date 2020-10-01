@@ -1,11 +1,10 @@
-import React from 'react'
+import React from 'react';
 
 //TODO Write methods, connect to JSX
 
 class Edit extends React.Component {
   constructor(props) {
-    super(props)
-
+    super(props);
     this.state = {
       userInput: '',
     }

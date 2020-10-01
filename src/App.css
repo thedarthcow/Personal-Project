@@ -47,7 +47,7 @@
   margin-left: -500px;
   background-color: #e65847;
   color: black;
-  padding: 15px;
+  padding: 5px;
   box-sizing: border-box;
   border: none;
   box-shadow: 2px 2px 3px #666666;
@@ -117,6 +117,7 @@
   color: #4b87be;
   border-radius: 5px;
   box-shadow: 2px 2px 3px #000000;
+  padding: 80px;
 }
 
 .post-feed {
@@ -168,3 +169,17 @@
   border: none;
   border-radius: 5px;
 }
+
+.like-button {
+  height: 38px;
+  color: red;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: transparent;
+  position: absolute;
+  right: 350px;
+}
+

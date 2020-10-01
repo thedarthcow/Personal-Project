@@ -13,7 +13,7 @@ create table users ( --creates a new table in database
 create table if not exists posts( 
     id serial primary key,
     users_id int references users(id),
-    content varchar(250),
+    content varchar(100),
     created_at date
 );
 

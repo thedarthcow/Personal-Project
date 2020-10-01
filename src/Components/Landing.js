@@ -12,7 +12,7 @@ class Landing extends Component {
       email: '',
       password: '',
     }
-    //this.handleLogin = this.handleLogin.bind(this)
+    this.handleLogin = this.handleLogin.bind(this)
   }
 
   handleInput = (e) => {
@@ -41,8 +41,8 @@ class Landing extends Component {
           <div className="flex-horizontal inputs">
             <div className="flex-vertical">
               <input
-                maxLength="100"
-                placeholder="Enter Email"
+                maxLength="20"
+                placeholder="Username"
                 name="email"
                 onChange={(e) => {
                   this.handleInput(e)
@@ -51,7 +51,7 @@ class Landing extends Component {
               <input
                 type="password"
                 maxLength="20"
-                placeholder="Enter Password"
+                placeholder="Password"
                 name="password"
                 onChange={(e) => {
                   this.handleInput(e)
