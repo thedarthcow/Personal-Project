@@ -1,5 +1,3 @@
-//Need to do: Create routes
-
 import { Route, Switch, Redirect } from 'react-router-dom'
 import React from 'react'
 import Landing from './Components/Landing'

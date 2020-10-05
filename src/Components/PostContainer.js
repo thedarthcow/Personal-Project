@@ -2,8 +2,6 @@ import React from 'react'
 import Post from './Post'
 import Edit from './Edit'
 
-//TODO Display post or edit, build out methods
-
 class PostContainer extends React.Component {
   constructor() {
     super()
@@ -12,8 +10,6 @@ class PostContainer extends React.Component {
       likeCount:0
     }
   }
-
-  
 
   toggleEdit = () => {
     this.setState({

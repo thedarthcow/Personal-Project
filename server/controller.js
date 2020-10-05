@@ -10,12 +10,7 @@ module.exports = {
     res.status(200).send(posts)
   },
   addPost: async (req, res) => {
-    /*
-      //TODO Pull user's id from session
-      //TODO Get content from req.body
-      //TODO save the post to the db
-      //TODO send back all posts
-    */
+  
     const db = req.app.get('db')
 
     //Pull user id from session
@@ -32,12 +27,7 @@ module.exports = {
     res.status(200).send(posts)
   },
   editPost: async (req, res) => {
-    /*
-      //TODO Get content from req.body
-      //TODO Get the post_id from req.params
-      //TODO save the updated post to the db
-      //TODO send back all posts
-    */
+   
 
     const db = req.app.get('db')
 
@@ -55,11 +45,7 @@ module.exports = {
     res.status(200).send(posts)
   },
   deletePost: async (req, res) => {
-    /*
-      //TODO get post_id from req.params
-      //TODO delete post from db
-      //TODO send back updated posts array
-    */
+    
 
     const db = req.app.get('db')
 

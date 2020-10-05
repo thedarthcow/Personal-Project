@@ -2,14 +2,7 @@ const bcrypt = require('bcryptjs')
 
 module.exports = {
   register: async (req, res) => {
-    /*
-      //TODO get email, password from req.body
-      //TODO check if user already exists.  If they do, reject the request
-      //TODO salt and hash password
-      //TODO create the user in the db
-      //TODO put the user on session
-      //TODO send confirmation
-    */
+  
     const db = req.app.get('db')
     //Destructure values from body
     const { email, password } = req.body
@@ -38,13 +31,7 @@ module.exports = {
     res.status(200).send(req.session.user)
   },
   login: async (req, res) => {
-    /*
-      //TODO get email and password from req.body
-      //TODO see if the user exists.  If they don't, reject the request
-      //TODO Compare password and hash.  If there is a mismatch, reject the request
-      //TODO Put the user on session
-      //TODO send confirmation
-    */
+    
     const db = req.app.get('db')
     //Get email and password from body
     const { email, password } = req.body
@@ -62,7 +49,7 @@ module.exports = {
 
     //If there is a mismatch, reject the request
     if (!isAuthenticated) {
-      return res.status(403).send('Invalid email or password')
+      return res.status(403).send('Invalid username or password')
     }
 
     delete existingUser.hash
@@ -78,8 +65,8 @@ module.exports = {
     res.sendStatus(200)
   },
   getUser: (req, res) => {
-    //-TODO Get user from session
-
+    
+    //Get user from session
     if (req.session.user) {
       res.status(200).send(req.session.user)
     } else {

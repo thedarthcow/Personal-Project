@@ -1,8 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
 
-//TODO Fill out post content
-
 const Post = (props) => {
   return (
     <li className="post-container">
@@ -38,8 +36,13 @@ const Post = (props) => {
             }}
           >
             Like {props.likeCount}
+            
           </button>
+          
         )}
+        <div class="post-by"> 
+          Posted By: {props.user.email}
+        </div>
       </div>
     </li>
   )

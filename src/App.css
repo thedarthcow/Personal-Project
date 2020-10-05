@@ -21,20 +21,21 @@
 }
 .nav-links {
   display: flex;
-  width: 33%;
+  width: 30%;
   justify-content: space-around;
   align-items: center;
+  font-size: 20px;
 }
 
 .input-container {
   position: fixed;
   top: 10vh;
-  height: 10vh;
   width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
   background-color: grey;
+  height: 40px;
 }
 
 .input-container input {
@@ -182,4 +183,23 @@
   position: absolute;
   right: 350px;
 }
+.post-by {
+  color: lightblue;
+  font-size: 15px;
+  padding: 20px;
+  clear: both;
+  display: inline-block;
+  white-space: nowrap;
+}
+/* .div.image {
+  img src="https://www.freepik.com/premium-photo/happy-group-asian-girl-friends-enjoy-laughing-cheerful-sparkling-wine-glass-rooftop-party_1664950.htm";
+  width:300px;
+  height:200px;
+  background-size: 200%;
+  background-repeat: no-repeat;
+  background-position: center left;
+  } */
+
+
+  /* https://www.freepik.com/premium-photo/happy-group-asian-girl-friends-enjoy-laughing-cheerful-sparkling-wine-glass-rooftop-party_1664950.htm */
 
