@@ -5,16 +5,16 @@ const massive = require('massive')
 const authCtrl = require('./authController')
 const postCtrl = require('./controller')
 const verifyUser = require('./middlewares/verifyUser')
-const path = require('path')
+//const path = require('path')
 
 const app = express()
 const { CONNECTION_STRING, SERVER_PORT, SESSION_SECRET } = process.env  //setup for sessions
 
 app.use(express.static(__dirname + '/../build'))
 
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '../build/index.html'))
-})
+//app.get('*', (req, res) => {
+  //res.sendFile(path.join(__dirname, '../build/index.html'))
+//})
 
 //basic express setup
 app.use(express.json()) //parses the body. Converts data to a more readable format in json

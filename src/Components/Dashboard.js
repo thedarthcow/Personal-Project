@@ -4,7 +4,7 @@ import { getUser } from '../ducks/authReducer'
 import axios from 'axios'
 import PostContainer from './PostContainer'
 
-//TODO Write all methods, connect to store, connect methods to jsx.
+
 class Dashboard extends Component {
   constructor() {
     super()
