@@ -7,6 +7,7 @@ const Post = (props) => {
       <div>
         <p className="post-text">{props.post.content}</p>
       </div>
+
       <div className="post-buttons">
         {props.user.id === props.post.author_id && (
           <button
@@ -40,9 +41,22 @@ const Post = (props) => {
           </button>
           
         )}
+        {props.user.id === props.post.author_id && (
+          <div
+            className="profile-pic"
+            onClick={() => {
+              props.handleLike(props.post.id)
+            }}
+          >
+            {/* Like {props.likeCount} */}
+            
+          </div>
+          
+        )}
         <div class="post-by"> 
           Posted By: {props.user.email}
         </div>
+        
       </div>
     </li>
   )

@@ -191,3 +191,14 @@
   display: inline-block;
   white-space: nowrap;
 }
+.profile-pic {
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSkLAJJyxo5hZz8ngY7xgMmMt6yVmqxVgiGAw&usqp=CAU');
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+  width: 200px;
+  height: 220px;
+  display: flex;
+  margin-top: -85px;
+  
+}
